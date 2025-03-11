@@ -1,6 +1,14 @@
+### Compiled files ###
+*.class
+*.jar
+*.war
+*.ear
+
 HELP.md
-.gradle
+### Gradle files ###
+.gradle/
 build/
+out/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -18,13 +26,26 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
-out/
+.idea_modules/
 !**/src/main/**/out/
 !**/src/test/**/out/
+
+### Logs & Temp files ###
+logs/
+*.log
+*.tmp
+hs_err_pid*
+!src/main/resources/logback.xml
+
+### MacOS & Linux ###
+.DS_Store
+*.swp
+*.swo
+*.swn
 
 ### NetBeans ###
 /nbproject/private/
@@ -37,4 +58,35 @@ out/
 .vscode/
 
 ### Kotlin ###
+*.kts~
+*.kt~
+*.kotlin_metadata/
+*.kotlin_module
 .kotlin
+
+### Spring Boot Env var files ###
+.env
+.evn.local
+*.secrets
+
+### Docker ###
+docker-compose.override.yml
+docker-compose.dev.yml
+*.dockerignore
+.docker/
+
+### PostgreSQL & Redis file
+pgdata/
+redisdata/
+
+### Node.js (if include front-end in project) ###
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+### Kubernetes ###
+k8s/
+
+### etc and os temp files
+Thumbs.db
