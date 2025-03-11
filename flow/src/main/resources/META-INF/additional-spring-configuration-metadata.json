@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "Secret key for JWT signing and validation"
+    },
+    {
+      "name": "jwt.expiration",
+      "type": "java.lang.Integer",
+      "description": "Expiration JWT signing and validation"
+    },
+    {
+      "name": "security.oauth2.client.registration.google.client-id",
+      "type": "java.lang.String",
+      "description": "Google OAuth2 client ID"
+    },
+    {
+      "name": "security.oauth2.client.registration.google.client-secret",
+      "type": "java.lang.String",
+      "description": "Google OAuth2 client secret"
+    },
+    {
+      "name": "security.oauth2.client.registration.google.scope",
+      "type": "java.util.List<java.lang.String>",
+      "description": "Google OAuth2 authentication scopes"
+    }
+  ]
+}
